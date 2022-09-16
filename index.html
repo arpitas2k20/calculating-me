@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="stule.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Calculator</h1>
+      <div id="container">
+        <div id="display">
+          <input
+            type="text"
+            id="fun"
+            style="
+              width: 350px;
+              height: 60px;
+              margin-top: 20px;
+              text-align: right;
+              font-size: 30px;
+            "
+          />
+        </div>
+        <div class="row">
+          <button class="btn" onclick="clr()">AC</button>
+          <button class="btn" onclick="back()">C</button>
+          <button class="btn" id="module" onclick="fun('%')">%</button>
+          <button class="btn" id="slash" onclick="fun('/')">/</button>
+        </div>
+        <div class="row">
+          <button class="btn" id="sev" onclick="fun('7')">7</button>
+          <button class="btn" id="eight" onclick="fun('8')">8</button>
+          <button class="btn" id="nine" onclick="fun('9')">9</button>
+          <button class="btn" id="star" onclick="fun('*')">*</button>
+        </div>
+        <div class="row">
+          <button class="btn" id="four" onclick="fun('4')">4</button>
+          <button class="btn" id="five" onclick="fun('5')">5</button>
+          <button class="btn" id="six" onclick="fun('6')">6</button>
+          <button class="btn" id="minus" onclick="fun('-')">-</button>
+        </div>
+        <div class="row">
+          <button class="btn" id="one" onclick="fun('1')">1</button>
+          <button class="btn" id="two" onclick="fun('2')">2</button>
+          <button class="btn" id="three" onclick="fun('3')">3</button>
+          <button class="btn" id="plus" onclick="fun('+')">+</button>
+        </div>
+        <div class="row">
+          <button class="btn" id="zero" onclick="fun('0')">0</button>
+          <button class="btn" id="dot" onclick="fun('.')">.</button>
+          <button class="btn" id="equal" onclick="result()">=</button>
+        </div>
+      </div>
+    </center>
+    <script src="script.js"></script>
+  </body>
+</html>

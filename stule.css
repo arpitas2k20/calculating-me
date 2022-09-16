@@ -1,0 +1,28 @@
+#container {
+  width: 450px;
+  height: 550px;
+  background: rgba(124, 201, 232, 0.852);
+  margin-top: 50px;
+}
+
+.row {
+  margin: 10px;
+}
+#txt {
+  font-size: 100px;
+}
+.btn {
+  font-weight: bold;
+  font-size: 30px;
+  height: 40px;
+  width: 60px;
+  margin: 20px;
+  background-color: orange;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: blue;
+}
+#equal {
+  width: 150px;
+}
